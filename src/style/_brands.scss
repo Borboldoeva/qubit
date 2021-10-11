@@ -1,0 +1,24 @@
+ .brands {
+     padding: 50px 50px;
+     margin: 50px 50px;
+     list-style: none;
+     //  пока так ес шо по второму плану
+         
+
+     &__title {
+         padding: 60px;
+         margin: 0px;
+         font-size: 18px;
+         line-height: 30px;
+     }
+
+     &__subtitle {
+         font-size: 16px;
+         line-height: 24px;
+         font-weight: bold;
+     }
+
+     &__item {
+         list-style: none;
+     }
+ }

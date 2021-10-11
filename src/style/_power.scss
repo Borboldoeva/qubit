@@ -1,0 +1,27 @@
+ .power {
+
+     &__title {
+         font-size: 40px;
+         line-height: 45px;
+         font-weight: bold;
+     }
+
+     &__text {
+         font-size: 15px;
+         line-height: 30px;
+     }
+
+     &__btn {
+         color: #fff;
+         background-color: $secondary-color;
+         font-size: 15px;
+         line-height: 15px;
+     }
+
+     &__btn2 {
+         color: $secondary-color;
+         font-size: 15px;
+         line-height: 15px;
+     }
+
+ }

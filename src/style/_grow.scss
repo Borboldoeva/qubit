@@ -1,0 +1,18 @@
+.grow {
+    padding: 50px 50px;
+
+     &__title {
+         font-size: 40px;
+         line-height: 45px;
+     }
+    &__btn {
+        &:first-child {
+            @include btn-book(34px, $secondary-color, #fff);
+            margin-right: 38px;
+        }
+    }
+       text {
+           font-size: 14px;
+           line-height: 14px;
+       }
+}
