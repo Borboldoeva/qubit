@@ -1,24 +1,41 @@
  .brands {
-     padding: 50px 50px;
-     margin: 50px 50px;
+   padding: 35px 0 20px;
+
+   &__title {
+     font-size: 18px;
+     line-height: 30px;
+     text-align: center;
+     margin-bottom: 32px;
+   }
+
+   &__subtitle {
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 24px;
+
+     span {
+       border-bottom: 1px solid rgb(103, 48, 235);
+     }
+   }
+
+   .slick-track {
+     display: flex;
+     align-items: center;
+   }
+
+   .slick-slide {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   &__item {
      list-style: none;
-     //  пока так ес шо по второму плану
-         
 
-     &__title {
-         padding: 60px;
-         margin: 0px;
-         font-size: 18px;
-         line-height: 30px;
+     img {
+       width: 100%;
      }
-
-     &__subtitle {
-         font-size: 16px;
-         line-height: 24px;
-         font-weight: bold;
-     }
-
-     &__item {
-         list-style: none;
-     }
+   }
  }

@@ -12,3 +12,27 @@ $secondary-color: #6F2CFF;
   border-radius: 20px;
   height: 40px;
 }
+
+.row {
+  display: flex;
+
+  .col {
+    flex: 1;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+}
