@@ -1,5 +1,6 @@
 $primary-color: #1C1C1C;
 $secondary-color: #6F2CFF;
+$black: #000;
 
 @mixin btn-book($pd, $bgc, $clr) {
   cursor: pointer;
@@ -11,10 +12,12 @@ $secondary-color: #6F2CFF;
   padding-right: $pd;
   border-radius: 20px;
   height: 40px;
+  font-size: 15px;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 
   .col {
     flex: 1;

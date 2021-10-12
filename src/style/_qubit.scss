@@ -6,7 +6,7 @@
    &__subtitle {
      margin-top: 22px;
      margin-bottom: 60px;
-     color: #000;
+     color: $black;
      font-size: 18px;
      line-height: 30px;
    }
@@ -28,13 +28,15 @@
        margin-bottom: 16px;
        font-size: 19px;
        line-height: 23px;
-       color: #000000;
+       color: $black;
      }
 
      p {
        font-size: 15px;
-       line-height: 15px;
-       color: #000000;
+       line-height: 22px;
+       color: $black;
+       max-width: 316px;
+       margin: 0 auto;
      }
    }
  }

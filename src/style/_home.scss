@@ -5,14 +5,14 @@
     &__subtitle {
         font-size: 15px;
         line-height: 21px;
-        color: #000;
+        color: $black;
         margin-bottom: 19px;
     }
 
     &__title {
         font-size: 54px;
         line-height: 61px;
-        color: #000;
+        color: $black;
         margin-bottom: 37px;
 
         span {
@@ -23,7 +23,7 @@
     &__descr {
         font-size: 18px;
         line-height: 30px;
-        color: #000;
+        color: $black;
         margin-bottom: 4px;
         max-width: 438px;
 
