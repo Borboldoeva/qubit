@@ -402,26 +402,84 @@ body {
   color: #000000;
 }
 
+.power {
+  padding-top: 94px;
+  padding-bottom: 91px;
+  text-align: center;
+  padding-left: 130px;
+  background-color: #f5f5f5;
+}
+
 .power__title {
   font-size: 40px;
   line-height: 45px;
   font-weight: bold;
+  padding-bottom: 28px;
 }
 
 .power__text {
   font-size: 15px;
   line-height: 30px;
+  padding-bottom: 90px;
 }
 
 .power__btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #6F2CFF;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 20px;
+  height: 40px;
+  margin-top: 76px;
   color: #fff;
   background-color: #6F2CFF;
   font-size: 15px;
-  line-height: 15px;
 }
 
 .power__btn2 {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #6F2CFF;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 20px;
+  height: 40px;
   color: #6F2CFF;
+  background-color: #fff;
+  margin-right: 72px;
+  margin-top: 76px;
   font-size: 15px;
   line-height: 15px;
+  height: 40px;
 }
+
+.can {
+  padding-top: 94px;
+  padding-bottom: 91px;
+  text-align: center;
+}
+
+.can__title {
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.can .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.can p {
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
