@@ -5,3 +5,9 @@ $('.brands__carousel').slick({
   autoplaySpeed: 3000,
   speed: 2500
 })
+
+$('.trusted-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+
+})

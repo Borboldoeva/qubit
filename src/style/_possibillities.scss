@@ -1,0 +1,29 @@
+ .possibillities {
+     padding-top: 94px;
+     padding-bottom: 140px;
+     text-align: center;
+     
+     &__title {
+       margin-bottom: 65px;
+     }
+    .wrapper {
+      max-width: 276px;
+      margin: 0 auto 80px;
+
+    }
+        &__name {
+          font-size: 15px;
+          line-height: 22px;
+          font-weight: bold;
+          color: black; 
+          margin-bottom: 11px;
+          margin-top: 10px;
+          // добавить черный цвет в вертблз
+        //   удалить один роу потом его добавить
+        }      
+    &__text {
+      font-size: 15px;
+      line-height: 22px;
+      color: $primary-color;
+    }
+  }

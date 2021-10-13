@@ -1,0 +1,25 @@
+.ecosystem {
+
+  &__img {
+    //   расположить справа 
+    margin-bottom: 20px;
+  }
+
+    &__btn {
+        @include btn-book(45px, $secondary-color, #fff);
+        margin-left: 110px;
+        margin-top: 74px;
+    }
+   &__title {
+       margin-top: 94px;
+       margin-bottom: 12px;
+       margin-right: 196px;
+       margin-left: 110px;
+   }
+      &__text {
+          margin-left: 110px;
+          font-size: 13px;
+          line-height: 30px;
+      }
+
+}
