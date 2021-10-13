@@ -23,6 +23,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row .col {
@@ -364,13 +366,13 @@ body {
   margin-bottom: 16px;
   font-size: 19px;
   line-height: 23px;
-  color: #000000;
+  color: #000;
 }
 
 .qubit .wrapper p {
   font-size: 15px;
   line-height: 22px;
-  color: #000000;
+  color: #000;
   max-width: 316px;
   margin: 0 auto;
 }
@@ -433,6 +435,32 @@ body {
   font-size: 15px;
 }
 
+.power__btn:first-child {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #6F2CFF;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.power__btn:last-child {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #6F2CFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 15px;
+}
+
 .power__btn2 {
   cursor: pointer;
   border: none;
@@ -453,38 +481,45 @@ body {
   height: 40px;
 }
 
-.possibillities {
+.possibilities {
   padding-top: 94px;
   padding-bottom: 140px;
   text-align: center;
 }
 
-.possibillities__title {
+.possibilities__title {
   margin-bottom: 65px;
 }
 
-.possibillities .wrapper {
+.possibilities .col {
+  width: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.possibilities .wrapper {
   max-width: 276px;
   margin: 0 auto 80px;
 }
 
-.possibillities__name {
-  font-size: 15px;
-  line-height: 22px;
+.possibilities__name {
   font-weight: bold;
-  color: black;
+  font-size: 19px;
+  line-height: 45px;
+  color: #000;
   margin-bottom: 11px;
   margin-top: 10px;
 }
 
-.possibillities__text {
+.possibilities__text {
   font-size: 15px;
   line-height: 22px;
   color: #1C1C1C;
 }
 
 .trusted {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
   padding: 88px 0 105px;
 }
 
@@ -494,10 +529,8 @@ body {
 
 .trusted .card {
   max-width: 320px;
-  margin: 0 auto;
   width: 100%;
   background-color: #fff;
-  text-align: center;
 }
 
 .trusted .card__img {
@@ -506,6 +539,8 @@ body {
 
 .trusted .card__body {
   padding: 0 50px 80px;
+  max-height: 233px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,107 +548,47 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  max-width: 233px;
 }
 
 .trusted .card__body img {
-  margin: 25px ayto;
+  margin: 25px auto;
 }
 
 .trusted .card__body h3 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
   color: #6F2CFF;
 }
 
-.trusted__carousel {
+.trusted-carousel {
   max-width: 1050px;
   margin: 0 auto;
 }
 
-.ecosystem__img {
-  margin-bottom: 20px;
+.trusted-carousel__item {
+  margin-right: 40px;
 }
 
-.ecosystem__btn {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: #6F2CFF;
-  color: #fff;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 20px;
-  height: 40px;
-  font-size: 15px;
-  margin-left: 110px;
-  margin-top: 74px;
+.trusted .slick-prev {
+  background: url(../images/trusted-carousel/arrow-left.svg);
+  width: 26px;
+  height: 46px;
+  left: -38px;
 }
 
-.ecosystem__title {
-  margin-top: 94px;
-  margin-bottom: 12px;
-  margin-right: 196px;
-  margin-left: 110px;
+.trusted .slick-prev::before {
+  content: '';
 }
 
-.ecosystem__text {
-  margin-left: 110px;
-  font-size: 13px;
-  line-height: 30px;
+.trusted .slick-next {
+  background: url(../images/trusted-carousel/arrow-right.svg);
+  width: 26px;
+  height: 46px;
+  right: -38px;
 }
 
-.today {
-  background: url(../images/bg.book.demo.today.svg);
-  text-align: center;
-  width: 1900px;
-  height: 330px;
-}
-
-.today .title {
-  margin-top: 94px;
-  color: #ffff;
-}
-
-.today__form {
-  width: 100%;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 177px;
-  margin-bottom: 107px;
-  margin-left: 493px;
-  margin-right: 493px;
-}
-
-.today__input {
-  width: 268px;
-  height: 100%;
-  background: #FFFFFF;
-  border: 1px solid #6F2CFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 27.5px 0px 0px 27.5px;
-  font-size: 15px;
-  line-height: 21px;
-  color: rgba(0, 0, 0, 0.27);
-  outline: none;
-  padding-left: 26px;
-}
-
-.today__btn {
-  height: 100%;
-  width: 187px;
-  background: #6F2CFF;
-  border-radius: 0px 27.5px 27.5px 0px;
-  font-size: 15px;
-  line-height: 21px;
-  color: #FFFFFF;
-  outline: none;
-  border: none;
-  cursor: pointer;
+.trusted .slick-next::before {
+  content: '';
 }
 /*# sourceMappingURL=style.css.map */

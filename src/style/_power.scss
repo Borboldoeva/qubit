@@ -30,16 +30,25 @@
       }
      }
 
-     &__btn2 {
-         @include btn-book(45px, $secondary-color, #fff);
-         color: $secondary-color;
-         background-color: #fff;
-          margin-right: 72px;
-          margin-top: 76px;
-          font-size: 15px;
-         line-height: 15px;
-         height: 40px;
-     }
-     
-     
- }
+  &__btn {
+    &:first-child {
+      @include btn-book(45px, $secondary-color, #fff);
+
+    }
+
+    &:last-child {
+      @include btn-book(45px, #fff, $secondary-color);
+    }
+  }
+
+  &__btn2 {
+    @include btn-book(45px, $secondary-color, #fff);
+    color: $secondary-color;
+    background-color: #fff;
+    margin-right: 72px;
+    margin-top: 76px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 40px;
+  }
+}
