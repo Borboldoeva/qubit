@@ -1,0 +1,43 @@
+.footer {
+    background-color: #20003c;
+    &__logo {
+        color: $white;
+        border-radius: 0px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 618px;
+    }
+
+   h4 {
+       margin-top: 108px;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 21px;
+   color: $white;
+  margin-bottom: 30px;
+
+   }
+    &__text {
+        color: $white;
+        font-size: 16px;
+        line-height: 21px;
+        column-gap: 11px;
+        margin-bottom: 11px;
+    }
+    .row {
+        display: flex;
+         
+    }
+   
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 57px;
+    }
+    &__text1 {
+        color: $white;
+        margin-bottom: 82px;
+        margin-top: 56px;
+        margin-left: -100px;
+    }
+}

@@ -811,3 +811,113 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.connect {
+  text-align: center;
+}
+
+.connect__img {
+  margin-bottom: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.connect__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.connect .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect__links {
+  -webkit-column-gap: 33px;
+          column-gap: 33px;
+  margin-top: 28px;
+  margin-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer {
+  background-color: #20003c;
+}
+
+.footer__logo {
+  color: #fff;
+  border-radius: 0px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 618px;
+}
+
+.footer h4 {
+  margin-top: 108px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  -webkit-column-gap: 11px;
+          column-gap: 11px;
+  margin-bottom: 11px;
+}
+
+.footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 57px;
+}
+
+.footer__text1 {
+  color: #fff;
+  margin-bottom: 82px;
+  margin-top: 56px;
+  margin-left: -100px;
+}
+/*# sourceMappingURL=style.css.map */
