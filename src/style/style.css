@@ -869,18 +869,10 @@ body {
 
 .footer {
   background-color: #20003c;
+  padding-top: 57px;
 }
 
-.footer__logo {
-  color: #fff;
-  border-radius: 0px;
-  font-weight: bold;
-  text-align: center;
-  margin-left: 618px;
-}
-
-.footer h4 {
-  margin-top: 108px;
+.footer__title {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -890,34 +882,30 @@ body {
 
 .footer__text {
   color: #fff;
-  font-size: 16px;
-  line-height: 21px;
-  -webkit-column-gap: 11px;
-          column-gap: 11px;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 11px;
 }
 
-.footer .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer__text:last-child {
+  margin-bottom: 0;
 }
 
-.footer .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 57px;
-}
-
-.footer__text1 {
+.footer__logo {
   color: #fff;
-  margin-bottom: 82px;
-  margin-top: 56px;
-  margin-left: -100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer__rights {
+  color: #fff;
+  margin-top: 24px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
