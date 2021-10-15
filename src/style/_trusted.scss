@@ -7,7 +7,7 @@
   }
 
   .card {
-    max-width: 320px;
+    // max-width: 320px;
     width: 100%;
     background-color: #fff;
     // margin: 0 auto;
@@ -61,6 +61,7 @@
     width: 26px;
     height: 46px;
     right: -38px;
+
     &::before {
       content: '';
     }

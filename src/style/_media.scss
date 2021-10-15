@@ -13,23 +13,66 @@
         }
     }
 
-}
+    .home {
+        padding: 190px 20px 150px;
 
-.main {
-    .qubit {
-        text-align:center ;
-        &__desc {
+        &__title {
+            font-size: 40px;
         }
+    }
 
-        .wrapper {
-            display: flex;
+    .grow {
+        padding: 0;
+        .row {
             flex-direction: column;
-            z-index: 1;
+        }
+    }
+
+    .qubit {
+        .row {
+            flex-direction: column;
+        }
+    }
+
+    .power {
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+    }
+
+    .possibilities {
+        .row {
+            .col {
+                width: 50%;
+            }
+        }
+    }
+
+    .trusted {
+
+        .card {
+            max-width: 100%;
         }
 
-        // img не нужно 
+        &-carousel {
+            &__item {
+                margin-right: 0;
+            }
+        }
+    }
 
+    .ecosystem {
+        .row {
+            flex-direction: column;
+        }
+    }
 
+    .qubit {
+        .row {
+            margin: 0;
+        }
     }
 
 }

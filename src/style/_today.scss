@@ -10,7 +10,8 @@
     }
 
     &__form {
-        width: calc(268px + 187px);
+        max-width: calc(268px + 187px);
+        width: 100%;
         height: 45px;
         display: flex;
         margin: 0 auto;
