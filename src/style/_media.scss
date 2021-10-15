@@ -1,0 +1,35 @@
+@media(min-width: 0) and (max-width: 576px) {
+    .header {
+        .navbar-nav {
+            display: none;
+
+
+
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+.main {
+    .qubit {
+        text-align:center ;
+        &__desc {
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        // img не нужно 
+
+
+    }
+
+}
