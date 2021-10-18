@@ -33,12 +33,12 @@ $('.trusted-carousel').slick({
   ],
 })
 const burger = document.querySelector('.burger')
-const navbar = document.querySelector('.navbar-nav')
-const overlay = document.querySelector('overlay')
+const navbar = document.querySelector('.navbar')
+const overlay = document.querySelector('.overlay')
 burger.addEventListener('click', () => {
-navbar.classList.toggle('active')
+  navbar.classList.toggle('active')
   // бургеру дать актив
-burger.classList.toggle('active')
-overlay.classList.toggle('active')
-
+  burger.classList.toggle('active')
+  overlay.classList.toggle('active')
+  document.body.classList.toggle('hide')
 })

@@ -42,16 +42,18 @@ $burger-color : #f62eb9;
   color: #000000;
 }
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-    opacity: 40%;
-    display: none;
-    &.active {
-      display: block;
-    }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 40%;
+  display: none;
+  z-index: 1;
+
+  &.active {
+    display: block;
+  }
 }

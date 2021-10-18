@@ -13,6 +13,10 @@ body {
   font-family: 'Roboto';
 }
 
+body.hide {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -62,6 +66,7 @@ body {
   background-color: #000000;
   opacity: 40%;
   display: none;
+  z-index: 1;
 }
 
 .overlay.active {
@@ -75,6 +80,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .header .navbar {
@@ -140,41 +146,39 @@ body {
 
 .burger {
   background-color: transparent;
-  right: 100px;
   width: 30px;
   height: 30px;
-  z-index: 1;
-  top: 10;
+  z-index: 10;
+  top: 10px;
+  right: 30px;
   position: fixed;
   display: none;
 }
 
+.burger.active span {
+  background-color: transparent;
+}
+
+.burger.active span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.burger.active span::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0;
+}
+
 .burger span {
-  width: 30px;
+  width: 100%;
   height: 3px;
   background-color: #f62eb9;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.burger span.active span {
-  background-color: transparent;
-}
-
-.burger span.active span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 0;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-.burger span.active span::after {
-  top: 0;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
 }
 
 .burger span::before {
@@ -184,6 +188,8 @@ body {
   left: 0px;
   width: 100%;
   height: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   background-color: #f62eb9;
 }
 
@@ -194,6 +200,8 @@ body {
   left: 0px;
   width: 100%;
   height: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   background-color: #f62eb9;
 }
 
@@ -944,7 +952,12 @@ body {
 }
 
 @media (min-width: 0) and (max-width: 576px) {
+  .header {
+    position: fixed;
+    padding: 0;
+  }
   .header .navbar {
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -952,28 +965,46 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .header .navbar-nav {
-    display: none;
-  }
-  .header .navbar-nav.active {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #8365c0;
-    width: 50%;
-    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    row-gap: 30px;
+    width: 65vw;
+    padding: 30px 0;
     position: absolute;
     top: 0;
-    right: 2px;
+    right: -101%;
+    background-color: #8365c0;
     color: #918383;
-    height: 60vh;
-    -webkit-column-gap: 15px;
-            column-gap: 15px;
+    -webkit-transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    z-index: 2;
   }
-  .header .navbar-nav .nav-item {
+  .header .navbar .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 15px;
+  }
+  .header .navbar.active {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+    -webkit-transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .header .navbar__logo {
+    font-size: 30px;
+    color: #fff;
+  }
+  .header .navbar-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -982,10 +1013,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header .navbar-nav .nav-item.active {
-    -webkit-column-gap: 15px;
-            column-gap: 15px;
-    font-size: 22px;
+  .header .navbar__btn:first-child {
+    margin: 0;
+  }
+  .header .navbar .nav-item {
+    font-size: 24px;
   }
   .burger {
     display: block;
@@ -1040,4 +1072,3 @@ body {
     margin: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */

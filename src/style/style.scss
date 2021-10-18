@@ -11,6 +11,10 @@
 
 body {
   font-family: 'Roboto';
+
+  &.hide {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -35,4 +39,3 @@ body {
 @import './connect';
 @import './footer';
 @import './media';
-
