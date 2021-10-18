@@ -19,7 +19,6 @@ $('.brands__carousel').slick({
 $('.trusted-carousel').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  variableWidth: true,
   responsive: [
     {
       breakpoint: 575,
